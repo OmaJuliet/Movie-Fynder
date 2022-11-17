@@ -60,7 +60,7 @@ const Navbar = () => {
   )
   return (
     <div className="flex flex-wrap justify-between mb-4 mt-4">
-          <p className="lg:mb-0 mb-2">Name</p>
+          <p className="lg:mb-0 mb-2">Movie Fynder</p>
           <div>
             <Link to="/"><button className="lg:mx-4 bg-orange-400 rounded-full focus:border-0 focus:outline-0 text-white text-base px-2 py-1 mx-1">Popular</button></Link>
             <Link to="/latest"><button className="lg:mx-4 bg-orange-400 rounded-full focus:border-0 focus:outline-0 text-white text-base px-2 py-1 mx-1">Year 2021</button></Link>

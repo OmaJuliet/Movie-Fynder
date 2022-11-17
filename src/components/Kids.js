@@ -1,7 +1,6 @@
 import React from 'react';
 import axios from "axios";
 import { useState, useEffect } from "react";
-// import Navbar from "../components/Navbar";
 import KidsResult from "../components/KidsResult";
 import { Link } from "react-router-dom";
 import { motion } from 'framer-motion';
@@ -83,7 +82,7 @@ const Kids = () => {
     return (
         <div className="max-w-[1240px] shadow-xl min-h-[400px] mx-auto p-3">
             <div className="flex flex-wrap justify-between mb-4 mt-4">
-                <p className="lg:mb-0 mb-2">Name</p>
+                <p className="lg:mb-0 mb-2">Movie Fynder</p>
                 <div>
                     <Link to="/"><button className="lg:mx-4 bg-orange-400 rounded-full focus:border-0 focus:outline-0 text-white text-base px-2 py-1 mx-1">Home</button></Link>
                     <Link to="/2021"><button className="lg:mx-4 bg-orange-400 rounded-full focus:border-0 focus:outline-0 text-white text-base px-2 py-1 mx-1">Year 2021</button></Link>
@@ -92,7 +91,6 @@ const Kids = () => {
                 </div>
                 <input type="search" value={search} onChange={changeTheSearch} placeholder="Search" className="lg:w-1/4 w-full mt-4 lg:mt-0 rounded text-grey-700 p-2 border-2 border-black" />
             </div>
-            {/* <Navbar /> */}
             {
                 movies.length === 0
                     ?

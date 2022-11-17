@@ -2,15 +2,12 @@
     position: relative;
     margin-top: 5rem;
     margin-bottom: 5rem;
-    /* height: 30vh; */
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
   .image {
-    /* width: 1000px;
-    height: 600px; */
     width: 800px;
     height: 450px;
     border-radius: 10px;
