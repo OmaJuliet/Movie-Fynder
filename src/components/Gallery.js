@@ -25,11 +25,11 @@ const Gallery = ({ slides }) => {
     return (
         <>
                 <div className="flex flex-wrap justify-between mb-4 mt-4 lg:mx-20">
-                    <p className="lg:mb-0 mb-2">Movie Fynder</p>
+                    <p className="lg:mb-0 mb-4 text-orange-500 font-bold text-xl ml-2">Movie Fynder</p>
                     <div>
-                        <Link to="/"><button className="lg:mx-4 bg-orange-400 rounded-full focus:border-0 focus:outline-0 text-white text-base px-2 py-1 mx-1">Home</button></Link>
+                        <Link to="/"><button className="lg:mx-4 bg-orange-400 rounded-full focus:border-0 focus:outline-0 text-white text-base px-2 py-1 mx-1">Trending</button></Link>
                         <Link to="/2021"><button className="lg:mx-4 bg-orange-400 rounded-full focus:border-0 focus:outline-0 text-white text-base px-2 py-1 mx-1">Year 2021</button></Link>
-                        <Link to="/kids"><button className="lg:mx-4 bg-orange-400 rounded-full focus:border-0 focus:outline-0 text-white text-base px-2 py-1 mx-1">Kids</button></Link>
+                        <Link to="/2022"><button className="lg:mx-4 bg-orange-400 rounded-full focus:border-0 focus:outline-0 text-white text-base px-2 py-1 mx-1">Year 2022</button></Link>
                         <Link to="/gallery"><button className="lg:mx-4 bg-orange-400 rounded-full focus:border-0 focus:outline-0 text-white text-base px-2 py-1 mx-1">Gallery</button></Link>
                     </div>
 
@@ -44,7 +44,10 @@ const Gallery = ({ slides }) => {
                                 key={index}
                             >
                                 {index === current && (
-                                    <img src={slide.image} alt='travel image' className='image' />
+                                    <>
+                                      <img src={slide.image} alt='movie' className='image' />
+                                      <p>{slide.text}</p>
+                                    </>
                                 )}
                             </div>
                         );
