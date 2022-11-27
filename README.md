@@ -5,8 +5,8 @@
 Movie Fynder: This is a movie search web application. It enables users to search for movies of all genres, trending, and movie releases for year 2021 and 2022. Made use of Reactjs, Axios to fetch movie data from TMDB API.
 
 
-## App's Interface 🤭
-![Movie app UI](app interface.png) 
+## App's Interface 
+![Movie App](app-interface.png) 
 
 
 ## Libraries & Technologies Used
